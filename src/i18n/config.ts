@@ -13,7 +13,7 @@ const localSetting = JSON.parse(localStorage.getItem(SETTING_KEY) as any) as Web
 
 i18next.use(initReactI18next).init({
   debug: process.env.NODE_ENV === 'development',
-  fallbackLng: 'en_US',
+  fallbackLng: 'zh_CN',
   lng: localSetting?.i18n || 'zh_CN',
   resources: {
     en_US: {
